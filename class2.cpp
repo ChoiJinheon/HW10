@@ -2,6 +2,18 @@
 
 #include "class.h"
 
+character::character(int N1_i, int N2_i, float a_i, float b_i, float x0_i, float dx_i, int m_i) {
+	N1 = N1_i;
+	N2 = N2_i;
+	a = a_i;
+	b = b_i;
+	x0 = x0_i;
+	dx = dx_i;
+	m = m_i;
+	datafunc_1 = new int[num];
+	datafunc_2 = new float[m];
+}
+
 int* character::func_1() {
 	int n = N2 - N1 + 1;
 	num = n;
